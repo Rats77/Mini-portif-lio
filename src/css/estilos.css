@@ -1,0 +1,149 @@
+body{
+    background-image: url(../imagens/fundo-portifolio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.card{
+    background-color: rgb(5, 6, 14);
+    width: 370px;
+    border: 2px solid rgb(43, 3, 3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sobre-mim{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.sobre-mim img{
+    border-radius: 50px;
+    border: 2px solid crimson;
+}
+
+.sobre-mim .nome{
+    font-size: 26px;
+}
+
+.sobre-mim .cargo{
+    font-size: 20px;
+    color: rgb(199, 199, 199);
+}
+
+.card .conteudo{
+    margin-top: 15px;
+}
+
+.card .abas{
+    display: flex;
+    
+}
+
+.card .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.abas img {
+    width: 30px;
+}
+
+.card .sobre-mim{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .sobre-mim img{
+    width: 140px;
+    height: 100px;
+}
+
+.card .abas .aba.selecionado{
+    background-color: rgb(25, 25, 48);
+}
+
+.card .informacoes-abas{
+    background-color: rgb(25, 25, 48);
+}
+
+.card .abas .aba:hover{
+    background-color: rgb(40, 40, 63);
+}
+
+.informacoes-abas .informacao{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionado{
+    display: block;
+}
+
+.informacoes-abas .sub-titulo{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.informacoes-abas .descricao{
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.redes-sociais li a{
+    background-color: aqua;
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.redes-sociais .curriculo{
+    background-color: rgb(45, 163, 45);
+}
+
+.redes-sociais .linkedin{
+    background-color: rgb(57, 57, 214);
+}
+
+.redes-sociais .github{
+    background-color: rgb(77, 17, 133);
+}
+
+.redes-sociais li a:hover{
+    opacity: 0.7;
+}
